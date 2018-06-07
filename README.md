@@ -6,5 +6,5 @@ Even een test
 
 nee
 
-Kenan's entry
+ja
 Kenan's entry 2
