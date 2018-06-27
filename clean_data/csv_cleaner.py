@@ -2,17 +2,19 @@ import pandas as pd
 import numpy as np 
 import csv
 
-def column_picker(csv_file):
+def column_picker(df):
     
-    usecols = [*range(3,7),8,*range(10,13),16,17]
-    df = pd.read_csv(csv_file, sep=None, engine="python",usecols=usecols)
 
     conditions = (df["WOONPLAATS"] == "AMSTERDAM")|(df["WOONPLAATS"] == "AMSTERDAM ZUIDOOST")|(df["WOONPLAATS"] == "AMSTERDAM ZUID00ST")
     df = df.loc[conditions]
     df = df.drop('WOONPLAATS',axis=1)
-    df.to_csv('kvg_2017.csv',index=False)
+    # df['begin_POST'] = df['POSTCODE_VAN'].astype(str).str[0:4]
+    df.to_csv('kvg_2016.csv',index=False)
 
-column_picker("Liander_kleinverbruiksgegevens_01012017.csv")
+usecols = [*range(3,7),8,*range(10,13),16,17]
+df = pd.read_csv("Liander_kleinverbruiksgegevens_01012016.csv", sep=None, decimal=",", engine="python",usecols=usecols)
+
+column_picker(df)
 
 
 
