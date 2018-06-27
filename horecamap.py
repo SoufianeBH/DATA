@@ -27,7 +27,7 @@ for f in range(len(data['long'])):
 
 TOOLS="hover,crosshair,pan,wheel_zoom,zoom_in,zoom_out,box_zoom,undo,redo,reset,tap,save,box_select,poly_select,lasso_select,"
 
-p = figure(tools=TOOLS)
+p = figure(tools=TOOLS, plot_width=800, plot_height=580, title='Horecagelegenheden in Amsterdam')
 p.image_url(url=['Capture.png'],w=2668,h=1328, x=47494.287, y=524238.336)
 
 p.scatter(x, y, radius=radii,

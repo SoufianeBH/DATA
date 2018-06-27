@@ -11,15 +11,7 @@ elklijst = []
 elk = 0
 gas = 0
 lastpost = '1011A'
-lastpostbig = 1011
-colors = []
-counter = 0
-color = 0
 for x in range(len(data['POSTCODE_TOT'])):
-    if data['POSTCODE_TOT'][x][:4] != lastpostbig:
-        counter += 1
-        color = "#%02x%02x%02x" % (int(counter*2), int(counter), int(counter*2))
-        print(color)
     if data['POSTCODE_TOT'][x][:5] == lastpost:
         if data['PRODUCTSOORT'][x] == "ELK":
             elk += data['SJV'][x]
@@ -28,7 +20,6 @@ for x in range(len(data['POSTCODE_TOT'])):
     else:
         gaslijst.append(gas)
         elklijst.append(elk)
-        colors.append(color)
         if data['PRODUCTSOORT'][x] == "ELK":
             elk = data['SJV'][x]
         else:
@@ -39,9 +30,10 @@ for x in range(len(data['POSTCODE_TOT'])):
 # hier moet je lijsten ingooien
 x = gaslijst
 y = elklijst
-print(len(x))
-print(len(y))
-radii = [10000 for x in range(len(y))]
+colors = []
+for i in range(len(gaslijst)):
+    colors.append("#%02x%02x%02x" % (int(max(min((gaslijst[i]+elklijst[i])/1000, 255), 65)), int(max(min(255-(elklijst[i]/2+gaslijst[i]/5)/700, 200), 0)), 0))
+radii = [12000+np.random.random()*3000 for x in range(len(y))]
 
 # ook een lijst
 # colors = []
@@ -51,13 +43,12 @@ radii = [10000 for x in range(len(y))]
 TOOLS="hover,crosshair,pan,wheel_zoom,zoom_in,zoom_out,box_zoom,undo,redo,reset,tap,save,box_select,poly_select,lasso_select,"
 
 p = figure(tools=TOOLS)
+
 # voor een fotootje
 # p.image_url(url=['Capture.png'],w=2668,h=1328, x=47494.287, y=524238.336)
 
-print(colors)
-
 p.scatter(x, y, radius=radii,
-          fill_color=colors, fill_alpha=0.95,
+          fill_color=colors, fill_alpha=0.75,
           line_color=None)
 
 output_file("GAS_ELK.html", title="color_scatter.py example")

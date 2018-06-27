@@ -3,12 +3,13 @@ import pandas as pd
 
 from bokeh.plotting import figure, show, output_file
 
-data = pd.read_csv('clean_data\kvg_2009.csv')
+data = pd.read_csv('clean_data\kvg_2016.csv')
 
 lastpost = 1011
 postcheck = 0
 elklijst = []
 gaslijst = []
+postcodelijst = []
 count = 0
 elk = 0
 gas = 0
@@ -27,17 +28,19 @@ for x in range(len(data['POSTCODE_TOT'])):
     else:
         elklijst.append(elk)
         gaslijst.append(gas)
+        postcodelijst.append(lastpost)
         elk, gas = 0, 0
     lastpost = data['POSTCODE_TOT'][x][:4]
 
+postcodelijst.pop(0)
 x = gaslijst
 y = elklijst
 gemgrote = [(elklijst[i]+gaslijst[i])/100 for i in range(len(gaslijst))]
-radii = [10000 for x in range(len(gaslijst))]
+radii = [5500+(gaslijst[x]+elklijst[x])/450 for x in range(len(gaslijst))]
 
 colors = []
-for f in radii:
-    colors.append("#%02x%02x%02x" % (255, 85, 0))
+for i in range(len(gaslijst)):
+    colors.append("#%02x%02x%02x" % (int(max(min((gaslijst[i]+elklijst[i])/8500, 255), 140)), int(max(min(255-(elklijst[i]/3+gaslijst[i]/5)/8000, 200), 0)), 0))
 
 # colors = [
 #     "#%02x%02x%02x" % (int(r), int(g), 150) for r, g in zip(50+2*x, 30+2*y)
@@ -50,9 +53,9 @@ p = figure(tools=TOOLS)
 # p.image_url(url=['Capture.png'],w=2668,h=1328, x=47494.287, y=524238.336)
 
 p.scatter(x, y, radius=radii,
-          fill_color=colors, fill_alpha=0.65,
+          fill_color=colors, fill_alpha=0.85,
           line_color=None)
 
-output_file("GAS_ELK.html", title="color_scatter.py example")
+output_file("GAS_ELK_pp.html", title="color_scatter.py example")
 
 show(p)  # open a browser
