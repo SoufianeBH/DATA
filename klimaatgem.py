@@ -41,7 +41,7 @@ for x in range(len(data["TN"])):
         days = 0
     else:
         tempmin_avg.append(nan)
-    totaltemp += data["TN"][x]
+    totaltemp += data["TG"][x]
     days += 1
     lastyear = int(str(data["Date"][x])[:4])
 
