@@ -4,14 +4,14 @@ import pandas as pd
 from bokeh.plotting import figure, show, output_file
 from bokeh.models.widgets import Panel, Tabs
 
-data09 = pd.read_csv("GAS_ELK\GAS_2009.csv")
-data10 = pd.read_csv("GAS_ELK\GAS_2010.csv")
-data11 = pd.read_csv("GAS_ELK\GAS_2011.csv")
-data12 = pd.read_csv("GAS_ELK\GAS_2012.csv")
-data13 = pd.read_csv("GAS_ELK\GAS_2013.csv")
-data14 = pd.read_csv("GAS_ELK\GAS_2014.csv")
-data15 = pd.read_csv("GAS_ELK\GAS_2015.csv")
-data16 = pd.read_csv("GAS_ELK\GAS_2016.csv")
+data09 = pd.read_csv("GAS_ELK\GAS_2009.csv", decimal=',')
+data10 = pd.read_csv("GAS_ELK\GAS_2010.csv", decimal=',')
+data11 = pd.read_csv("GAS_ELK\GAS_2011.csv", decimal=',')
+data12 = pd.read_csv("GAS_ELK\GAS_2012.csv", decimal=',')
+data13 = pd.read_csv("GAS_ELK\GAS_2013.csv", decimal=',')
+data14 = pd.read_csv("GAS_ELK\GAS_2014.csv", decimal=',')
+data15 = pd.read_csv("GAS_ELK\GAS_2015.csv", decimal=',')
+data16 = pd.read_csv("GAS_ELK\GAS_2016.csv", decimal=',')
 
 post = pd.read_csv("4pp.csv")
 
@@ -43,7 +43,7 @@ def plotmaker(data):
     listcounter = 0
     for i in range(len(data["POSTCODE_TOT"])):
         if int(data["POSTCODE_TOT"][i][:4]) in ll:
-            avg += int(data["SJV"][i]) * int(data["Aantal Aansluitingen"][i])
+            avg += int(data["SJV"][i]) * int(data["Aantal Aansluitingen"][i]) * (float(data['%Fysieke status'][i])/100)
             counter += 1
         if lastpost != int(data["POSTCODE_TOT"][i][:4]):
             if lastpost in ll:
