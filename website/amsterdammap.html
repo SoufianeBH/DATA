@@ -1,0 +1,2423 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_fb0aeb7c2fe042c0b558b887b6725eec {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_fb0aeb7c2fe042c0b558b887b6725eec" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_fb0aeb7c2fe042c0b558b887b6725eec = L.map(
+                                  'map_fb0aeb7c2fe042c0b558b887b6725eec',
+                                  {center: [52.36424,4.883358],
+                                  zoom: 12,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            L.control.scale().addTo(map_fb0aeb7c2fe042c0b558b887b6725eec);
+        
+    
+            var tile_layer_b7e5bde2a3694869ae49f0ccf6c0d13d = L.tileLayer(
+                'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_fb0aeb7c2fe042c0b558b887b6725eec);
+        
+    
+            var marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460 = L.markerClusterGroup({
+                
+            });
+            map_fb0aeb7c2fe042c0b558b887b6725eec.addLayer(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var regular_polygon_marker_8206fe4e75d64221908c568114bebf88 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3729762,4.9039565),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_efdbb6743d8a49c0aebfb2e21e374468 = L.popup({maxWidth: '300'});
+
+            
+                var html_ad8b22fbc34d4e4e90c61b6eba4c0106 = $('<div id="html_ad8b22fbc34d4e4e90c61b6eba4c0106" style="width: 100.0%; height: 100.0%;">Postcode: 1011 | Stroomverbruik: 25022456</div>')[0];
+                popup_efdbb6743d8a49c0aebfb2e21e374468.setContent(html_ad8b22fbc34d4e4e90c61b6eba4c0106);
+            
+
+            regular_polygon_marker_8206fe4e75d64221908c568114bebf88.bindPopup(popup_efdbb6743d8a49c0aebfb2e21e374468);
+
+            
+        
+    
+            var regular_polygon_marker_1332e34759de42f6b5d7632df06fe0f2 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3733862,4.8940639),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_dbd60b0a406e4b119e5e0a4874754ea8 = L.popup({maxWidth: '300'});
+
+            
+                var html_c880260ca3de4c11805431f8de581f5c = $('<div id="html_c880260ca3de4c11805431f8de581f5c" style="width: 100.0%; height: 100.0%;">Postcode: 1012 | Stroomverbruik: 62351630</div>')[0];
+                popup_dbd60b0a406e4b119e5e0a4874754ea8.setContent(html_c880260ca3de4c11805431f8de581f5c);
+            
+
+            regular_polygon_marker_1332e34759de42f6b5d7632df06fe0f2.bindPopup(popup_dbd60b0a406e4b119e5e0a4874754ea8);
+
+            
+        
+    
+            var regular_polygon_marker_be00f5dcf1524f56abfdc6b2b6ff06d0 = new L.RegularPolygonMarker(
+                new L.LatLng(52.396789,4.8766067),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_da35f5fd64e94f0296d8fa0898e0ea4f = L.popup({maxWidth: '300'});
+
+            
+                var html_836397aaf0b047f18ca3a7a5c3c23d72 = $('<div id="html_836397aaf0b047f18ca3a7a5c3c23d72" style="width: 100.0%; height: 100.0%;">Postcode: 1013 | Stroomverbruik: 43458738</div>')[0];
+                popup_da35f5fd64e94f0296d8fa0898e0ea4f.setContent(html_836397aaf0b047f18ca3a7a5c3c23d72);
+            
+
+            regular_polygon_marker_be00f5dcf1524f56abfdc6b2b6ff06d0.bindPopup(popup_da35f5fd64e94f0296d8fa0898e0ea4f);
+
+            
+        
+    
+            var regular_polygon_marker_86757859d66245ecb839fbb1a28e58a3 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3923045,4.8558842),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_8e76fa7f01c343439d3fef57f9c60169 = L.popup({maxWidth: '300'});
+
+            
+                var html_5059b56b88254928969a9183a1c655f8 = $('<div id="html_5059b56b88254928969a9183a1c655f8" style="width: 100.0%; height: 100.0%;">Postcode: 1014 | Stroomverbruik: 3564937</div>')[0];
+                popup_8e76fa7f01c343439d3fef57f9c60169.setContent(html_5059b56b88254928969a9183a1c655f8);
+            
+
+            regular_polygon_marker_86757859d66245ecb839fbb1a28e58a3.bindPopup(popup_8e76fa7f01c343439d3fef57f9c60169);
+
+            
+        
+    
+            var regular_polygon_marker_70fb9773838f44cbbad0ed2f5474d3ef = new L.RegularPolygonMarker(
+                new L.LatLng(52.3790928,4.885109),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_919b67216b8b448c9bede0dc68408916 = L.popup({maxWidth: '300'});
+
+            
+                var html_aeaf67015d034b99bc55cea53ad60dc5 = $('<div id="html_aeaf67015d034b99bc55cea53ad60dc5" style="width: 100.0%; height: 100.0%;">Postcode: 1015 | Stroomverbruik: 33877662</div>')[0];
+                popup_919b67216b8b448c9bede0dc68408916.setContent(html_aeaf67015d034b99bc55cea53ad60dc5);
+            
+
+            regular_polygon_marker_70fb9773838f44cbbad0ed2f5474d3ef.bindPopup(popup_919b67216b8b448c9bede0dc68408916);
+
+            
+        
+    
+            var regular_polygon_marker_8d304d8fdcdd43158e7a3d384fd5b7f6 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3711467,4.8837046),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_825066bfa6814685bbfff09a07cca0ae = L.popup({maxWidth: '300'});
+
+            
+                var html_70a2763351964ae8a5eb4f6a2850070d = $('<div id="html_70a2763351964ae8a5eb4f6a2850070d" style="width: 100.0%; height: 100.0%;">Postcode: 1016 | Stroomverbruik: 36032110</div>')[0];
+                popup_825066bfa6814685bbfff09a07cca0ae.setContent(html_70a2763351964ae8a5eb4f6a2850070d);
+            
+
+            regular_polygon_marker_8d304d8fdcdd43158e7a3d384fd5b7f6.bindPopup(popup_825066bfa6814685bbfff09a07cca0ae);
+
+            
+        
+    
+            var regular_polygon_marker_4871810723ec40f1aefbffc4040b1241 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3641851,4.8907747),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_11c435adf86044b4afb2f088bd3cba59 = L.popup({maxWidth: '300'});
+
+            
+                var html_368110c7bfde412c9bb23523a0d4ea64 = $('<div id="html_368110c7bfde412c9bb23523a0d4ea64" style="width: 100.0%; height: 100.0%;">Postcode: 1017 | Stroomverbruik: 59383633</div>')[0];
+                popup_11c435adf86044b4afb2f088bd3cba59.setContent(html_368110c7bfde412c9bb23523a0d4ea64);
+            
+
+            regular_polygon_marker_4871810723ec40f1aefbffc4040b1241.bindPopup(popup_11c435adf86044b4afb2f088bd3cba59);
+
+            
+        
+    
+            var regular_polygon_marker_52869d4c3bcb4c5cbbaf46188d40d33d = new L.RegularPolygonMarker(
+                new L.LatLng(52.3683871,4.9180909),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_af5b71f3a9bf42fd8e100fba906578b2 = L.popup({maxWidth: '300'});
+
+            
+                var html_30e75a308d39478c8a4e54bdfb9602cf = $('<div id="html_30e75a308d39478c8a4e54bdfb9602cf" style="width: 100.0%; height: 100.0%;">Postcode: 1018 | Stroomverbruik: 37857146</div>')[0];
+                popup_af5b71f3a9bf42fd8e100fba906578b2.setContent(html_30e75a308d39478c8a4e54bdfb9602cf);
+            
+
+            regular_polygon_marker_52869d4c3bcb4c5cbbaf46188d40d33d.bindPopup(popup_af5b71f3a9bf42fd8e100fba906578b2);
+
+            
+        
+    
+            var regular_polygon_marker_fb6f70bd2e45422c8ce62e4eeba1aa2e = new L.RegularPolygonMarker(
+                new L.LatLng(52.3728583,4.9388278),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_ea47b32c174e4d5c9b145bc0b38b0d67 = L.popup({maxWidth: '300'});
+
+            
+                var html_7aea855565a04d1c91e17a7b5aca50fb = $('<div id="html_7aea855565a04d1c91e17a7b5aca50fb" style="width: 100.0%; height: 100.0%;">Postcode: 1019 | Stroomverbruik: 36491376</div>')[0];
+                popup_ea47b32c174e4d5c9b145bc0b38b0d67.setContent(html_7aea855565a04d1c91e17a7b5aca50fb);
+            
+
+            regular_polygon_marker_fb6f70bd2e45422c8ce62e4eeba1aa2e.bindPopup(popup_ea47b32c174e4d5c9b145bc0b38b0d67);
+
+            
+        
+    
+            var regular_polygon_marker_8df56f03efad4c3890e185086d4488fa = new L.RegularPolygonMarker(
+                new L.LatLng(52.3842783,4.9209198),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_d87d0a04201a4aee9280a6dc94f20d9a = L.popup({maxWidth: '300'});
+
+            
+                var html_8717a4b896e5422fbce15cdfb754f7c5 = $('<div id="html_8717a4b896e5422fbce15cdfb754f7c5" style="width: 100.0%; height: 100.0%;">Postcode: 1021 | Stroomverbruik: 11067662</div>')[0];
+                popup_d87d0a04201a4aee9280a6dc94f20d9a.setContent(html_8717a4b896e5422fbce15cdfb754f7c5);
+            
+
+            regular_polygon_marker_8df56f03efad4c3890e185086d4488fa.bindPopup(popup_d87d0a04201a4aee9280a6dc94f20d9a);
+
+            
+        
+    
+            var regular_polygon_marker_7ac4d6b483a443c98598bdc113454513 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3879078,4.9298787),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_a5888df994da4b2490302c5a48d4d133 = L.popup({maxWidth: '300'});
+
+            
+                var html_819c0684cdf046deb881b74d8c57d92f = $('<div id="html_819c0684cdf046deb881b74d8c57d92f" style="width: 100.0%; height: 100.0%;">Postcode: 1022 | Stroomverbruik: 4626053</div>')[0];
+                popup_a5888df994da4b2490302c5a48d4d133.setContent(html_819c0684cdf046deb881b74d8c57d92f);
+            
+
+            regular_polygon_marker_7ac4d6b483a443c98598bdc113454513.bindPopup(popup_a5888df994da4b2490302c5a48d4d133);
+
+            
+        
+    
+            var regular_polygon_marker_d296e30fedcc40858309426a71bc76a9 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3870802,4.9496855),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_3ddd378956894c89ae37aa8430adda66 = L.popup({maxWidth: '300'});
+
+            
+                var html_376b4c64416140278b71aa93bb06f62b = $('<div id="html_376b4c64416140278b71aa93bb06f62b" style="width: 100.0%; height: 100.0%;">Postcode: 1023 | Stroomverbruik: 7099037</div>')[0];
+                popup_3ddd378956894c89ae37aa8430adda66.setContent(html_376b4c64416140278b71aa93bb06f62b);
+            
+
+            regular_polygon_marker_d296e30fedcc40858309426a71bc76a9.bindPopup(popup_3ddd378956894c89ae37aa8430adda66);
+
+            
+        
+    
+            var regular_polygon_marker_b17334c7fca844679d53cef76214ea70 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3934948,4.9558257),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_fe02b69f03784b909968b290754fa77b = L.popup({maxWidth: '300'});
+
+            
+                var html_ca8a28230f4a4d59997a3fb6ae70d3fb = $('<div id="html_ca8a28230f4a4d59997a3fb6ae70d3fb" style="width: 100.0%; height: 100.0%;">Postcode: 1024 | Stroomverbruik: 18582944</div>')[0];
+                popup_fe02b69f03784b909968b290754fa77b.setContent(html_ca8a28230f4a4d59997a3fb6ae70d3fb);
+            
+
+            regular_polygon_marker_b17334c7fca844679d53cef76214ea70.bindPopup(popup_fe02b69f03784b909968b290754fa77b);
+
+            
+        
+    
+            var regular_polygon_marker_ff511a3f88b5412d99cab4df831e1217 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3996222,4.9369594),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_58e863c17c4845cbaefb04085dae661e = L.popup({maxWidth: '300'});
+
+            
+                var html_d7dec7ff70aa41eebfe1a803411d877c = $('<div id="html_d7dec7ff70aa41eebfe1a803411d877c" style="width: 100.0%; height: 100.0%;">Postcode: 1025 | Stroomverbruik: 24198003</div>')[0];
+                popup_58e863c17c4845cbaefb04085dae661e.setContent(html_d7dec7ff70aa41eebfe1a803411d877c);
+            
+
+            regular_polygon_marker_ff511a3f88b5412d99cab4df831e1217.bindPopup(popup_58e863c17c4845cbaefb04085dae661e);
+
+            
+        
+    
+            var regular_polygon_marker_71ced0b8b8c04b94bdd31a019333c185 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3812323,4.9935529),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_159be8e532154c22a981835eb1cc1daf = L.popup({maxWidth: '300'});
+
+            
+                var html_b6c093ee8f8d4a2b91860b3451de1acd = $('<div id="html_b6c093ee8f8d4a2b91860b3451de1acd" style="width: 100.0%; height: 100.0%;">Postcode: 1026 | Stroomverbruik: 1239061</div>')[0];
+                popup_159be8e532154c22a981835eb1cc1daf.setContent(html_b6c093ee8f8d4a2b91860b3451de1acd);
+            
+
+            regular_polygon_marker_71ced0b8b8c04b94bdd31a019333c185.bindPopup(popup_159be8e532154c22a981835eb1cc1daf);
+
+            
+        
+    
+            var regular_polygon_marker_ddec9ffa98c944f894cb271aaf88f859 = new L.RegularPolygonMarker(
+                new L.LatLng(52.4119015,4.9624584),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_1f818c2cff1043f683fe579b29e5f6af = L.popup({maxWidth: '300'});
+
+            
+                var html_47c8baf8d3d94d7e8271c6f698d013db = $('<div id="html_47c8baf8d3d94d7e8271c6f698d013db" style="width: 100.0%; height: 100.0%;">Postcode: 1027 | Stroomverbruik: 1694709</div>')[0];
+                popup_1f818c2cff1043f683fe579b29e5f6af.setContent(html_47c8baf8d3d94d7e8271c6f698d013db);
+            
+
+            regular_polygon_marker_ddec9ffa98c944f894cb271aaf88f859.bindPopup(popup_1f818c2cff1043f683fe579b29e5f6af);
+
+            
+        
+    
+            var regular_polygon_marker_358670cdf7b24170a1ce1541a0d8fe39 = new L.RegularPolygonMarker(
+                new L.LatLng(52.4096694,5.015357),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_872ad27b2ee641c78e53c06d890a2812 = L.popup({maxWidth: '300'});
+
+            
+                var html_5bb0024d609d4bdabb2ca978d987891d = $('<div id="html_5bb0024d609d4bdabb2ca978d987891d" style="width: 100.0%; height: 100.0%;">Postcode: 1028 | Stroomverbruik: 1543571</div>')[0];
+                popup_872ad27b2ee641c78e53c06d890a2812.setContent(html_5bb0024d609d4bdabb2ca978d987891d);
+            
+
+            regular_polygon_marker_358670cdf7b24170a1ce1541a0d8fe39.bindPopup(popup_872ad27b2ee641c78e53c06d890a2812);
+
+            
+        
+    
+            var regular_polygon_marker_c49df7aff99e409e8d2f0dfdd204bcea = new L.RegularPolygonMarker(
+                new L.LatLng(52.3903988,4.9020632),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_7ae2adaf4c9c4d389173b39f41fff597 = L.popup({maxWidth: '300'});
+
+            
+                var html_7e9b524e86d247e18f62ec3d27fd5be9 = $('<div id="html_7e9b524e86d247e18f62ec3d27fd5be9" style="width: 100.0%; height: 100.0%;">Postcode: 1031 | Stroomverbruik: 11739103</div>')[0];
+                popup_7ae2adaf4c9c4d389173b39f41fff597.setContent(html_7e9b524e86d247e18f62ec3d27fd5be9);
+            
+
+            regular_polygon_marker_c49df7aff99e409e8d2f0dfdd204bcea.bindPopup(popup_7ae2adaf4c9c4d389173b39f41fff597);
+
+            
+        
+    
+            var regular_polygon_marker_719836e6d2b64bcd9b0701c6708de826 = new L.RegularPolygonMarker(
+                new L.LatLng(52.395149,4.9162053),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_a8def015184d44c1a6cc2d8f77ab788b = L.popup({maxWidth: '300'});
+
+            
+                var html_8b77bd97156f4ccb9c7e03cd7c3d5b18 = $('<div id="html_8b77bd97156f4ccb9c7e03cd7c3d5b18" style="width: 100.0%; height: 100.0%;">Postcode: 1032 | Stroomverbruik: 12027433</div>')[0];
+                popup_a8def015184d44c1a6cc2d8f77ab788b.setContent(html_8b77bd97156f4ccb9c7e03cd7c3d5b18);
+            
+
+            regular_polygon_marker_719836e6d2b64bcd9b0701c6708de826.bindPopup(popup_a8def015184d44c1a6cc2d8f77ab788b);
+
+            
+        
+    
+            var regular_polygon_marker_d7ca8bd9367149b7ba4f7641010f97f3 = new L.RegularPolygonMarker(
+                new L.LatLng(52.4071154,4.8850785),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_58c9f9a87e664c219dbdf0f1c970d0eb = L.popup({maxWidth: '300'});
+
+            
+                var html_8c3a2abcce0a4f51b4dd380263d8cfa4 = $('<div id="html_8c3a2abcce0a4f51b4dd380263d8cfa4" style="width: 100.0%; height: 100.0%;">Postcode: 1033 | Stroomverbruik: 20949825</div>')[0];
+                popup_58c9f9a87e664c219dbdf0f1c970d0eb.setContent(html_8c3a2abcce0a4f51b4dd380263d8cfa4);
+            
+
+            regular_polygon_marker_d7ca8bd9367149b7ba4f7641010f97f3.bindPopup(popup_58c9f9a87e664c219dbdf0f1c970d0eb);
+
+            
+        
+    
+            var regular_polygon_marker_fa292d249fc54b6bb9438d67eef481f8 = new L.RegularPolygonMarker(
+                new L.LatLng(52.4057469,4.9180914),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_ae6683a6caab439b876ae94f549a17ad = L.popup({maxWidth: '300'});
+
+            
+                var html_df09d40e7dce448b8a435ba7e72f0cda = $('<div id="html_df09d40e7dce448b8a435ba7e72f0cda" style="width: 100.0%; height: 100.0%;">Postcode: 1034 | Stroomverbruik: 18657348</div>')[0];
+                popup_ae6683a6caab439b876ae94f549a17ad.setContent(html_df09d40e7dce448b8a435ba7e72f0cda);
+            
+
+            regular_polygon_marker_fa292d249fc54b6bb9438d67eef481f8.bindPopup(popup_ae6683a6caab439b876ae94f549a17ad);
+
+            
+        
+    
+            var regular_polygon_marker_20a99245f7b8496a967407f3b4c45fea = new L.RegularPolygonMarker(
+                new L.LatLng(52.4168952,4.9067666),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_f25261e0044d40a5a25b9850b9d4c1e9 = L.popup({maxWidth: '300'});
+
+            
+                var html_e1877349cebb4027ac6f75f1179b6873 = $('<div id="html_e1877349cebb4027ac6f75f1179b6873" style="width: 100.0%; height: 100.0%;">Postcode: 1035 | Stroomverbruik: 15274799</div>')[0];
+                popup_f25261e0044d40a5a25b9850b9d4c1e9.setContent(html_e1877349cebb4027ac6f75f1179b6873);
+            
+
+            regular_polygon_marker_20a99245f7b8496a967407f3b4c45fea.bindPopup(popup_f25261e0044d40a5a25b9850b9d4c1e9);
+
+            
+        
+    
+            var regular_polygon_marker_3c8562a162284ad79706fdcd3fac6ddb = new L.RegularPolygonMarker(
+                new L.LatLng(52.4076888,4.9034688),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_d22ad0250e37484193f2bd74b711a049 = L.popup({maxWidth: '300'});
+
+            
+                var html_5c7429e86b24426d81c4f0b34f9240e1 = $('<div id="html_5c7429e86b24426d81c4f0b34f9240e1" style="width: 100.0%; height: 100.0%;">Postcode: 1036 | Stroomverbruik: 2092602</div>')[0];
+                popup_d22ad0250e37484193f2bd74b711a049.setContent(html_5c7429e86b24426d81c4f0b34f9240e1);
+            
+
+            regular_polygon_marker_3c8562a162284ad79706fdcd3fac6ddb.bindPopup(popup_d22ad0250e37484193f2bd74b711a049);
+
+            
+        
+    
+            var regular_polygon_marker_c61b2877ee3b4587bd5be13ae95f98c1 = new L.RegularPolygonMarker(
+                new L.LatLng(52.4238336,4.8680792),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_8df2011fcc244dffbc41fa57205b8bfc = L.popup({maxWidth: '300'});
+
+            
+                var html_6cc8f26ea2c84340b6b32a60a50eb730 = $('<div id="html_6cc8f26ea2c84340b6b32a60a50eb730" style="width: 100.0%; height: 100.0%;">Postcode: 1037 | Stroomverbruik: 258957</div>')[0];
+                popup_8df2011fcc244dffbc41fa57205b8bfc.setContent(html_6cc8f26ea2c84340b6b32a60a50eb730);
+            
+
+            regular_polygon_marker_c61b2877ee3b4587bd5be13ae95f98c1.bindPopup(popup_8df2011fcc244dffbc41fa57205b8bfc);
+
+            
+        
+    
+            var regular_polygon_marker_b3e06dba2df042b99c30c160599bf6fa = new L.RegularPolygonMarker(
+                new L.LatLng(52.4143153,4.8398143),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_14ed6af6f80e4edd9dfd6d49c16abb82 = L.popup({maxWidth: '300'});
+
+            
+                var html_56ccccf074d54770b12752ec01e0bba1 = $('<div id="html_56ccccf074d54770b12752ec01e0bba1" style="width: 100.0%; height: 100.0%;">Postcode: 1041 | Stroomverbruik: 1489863</div>')[0];
+                popup_14ed6af6f80e4edd9dfd6d49c16abb82.setContent(html_56ccccf074d54770b12752ec01e0bba1);
+            
+
+            regular_polygon_marker_b3e06dba2df042b99c30c160599bf6fa.bindPopup(popup_14ed6af6f80e4edd9dfd6d49c16abb82);
+
+            
+        
+    
+            var regular_polygon_marker_b8f2914bf6f94cf38d572fd8cad81d50 = new L.RegularPolygonMarker(
+                new L.LatLng(52.4042534,4.8247678),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_76241871659648088407c46daa548828 = L.popup({maxWidth: '300'});
+
+            
+                var html_ce96a0c1e7ef4afd8d92db0f586756dd = $('<div id="html_ce96a0c1e7ef4afd8d92db0f586756dd" style="width: 100.0%; height: 100.0%;">Postcode: 1042 | Stroomverbruik: 2287783</div>')[0];
+                popup_76241871659648088407c46daa548828.setContent(html_ce96a0c1e7ef4afd8d92db0f586756dd);
+            
+
+            regular_polygon_marker_b8f2914bf6f94cf38d572fd8cad81d50.bindPopup(popup_76241871659648088407c46daa548828);
+
+            
+        
+    
+            var regular_polygon_marker_617027bf460142fba1b07b50630a58ae = new L.RegularPolygonMarker(
+                new L.LatLng(52.3886232,4.8154024),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_d4775e60420d4822bc5fccf0cb8effcb = L.popup({maxWidth: '300'});
+
+            
+                var html_f69b1696969a4edcbafb75b920e171fb = $('<div id="html_f69b1696969a4edcbafb75b920e171fb" style="width: 100.0%; height: 100.0%;">Postcode: 1043 | Stroomverbruik: 3105779</div>')[0];
+                popup_d4775e60420d4822bc5fccf0cb8effcb.setContent(html_f69b1696969a4edcbafb75b920e171fb);
+            
+
+            regular_polygon_marker_617027bf460142fba1b07b50630a58ae.bindPopup(popup_d4775e60420d4822bc5fccf0cb8effcb);
+
+            
+        
+    
+            var regular_polygon_marker_77bb8796522f4aff85874a96775f7d9a = new L.RegularPolygonMarker(
+                new L.LatLng(52.4047907,4.8115803),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_bae4b4359bdb41719c3b0d539b9e329c = L.popup({maxWidth: '300'});
+
+            
+                var html_8fe1d13ce3d640028eb170f5398d3387 = $('<div id="html_8fe1d13ce3d640028eb170f5398d3387" style="width: 100.0%; height: 100.0%;">Postcode: 1044 | Stroomverbruik: 1345235</div>')[0];
+                popup_bae4b4359bdb41719c3b0d539b9e329c.setContent(html_8fe1d13ce3d640028eb170f5398d3387);
+            
+
+            regular_polygon_marker_77bb8796522f4aff85874a96775f7d9a.bindPopup(popup_bae4b4359bdb41719c3b0d539b9e329c);
+
+            
+        
+    
+            var regular_polygon_marker_0699a7e981c148e4a9f95699ad66bc7c = new L.RegularPolygonMarker(
+                new L.LatLng(52.4189802,4.7908055),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_571bc44bbdec4a8f9f9b372203c9a4f4 = L.popup({maxWidth: '300'});
+
+            
+                var html_41c7385cd90647ccb0c32854ce3911ad = $('<div id="html_41c7385cd90647ccb0c32854ce3911ad" style="width: 100.0%; height: 100.0%;">Postcode: 1045 | Stroomverbruik: 473296</div>')[0];
+                popup_571bc44bbdec4a8f9f9b372203c9a4f4.setContent(html_41c7385cd90647ccb0c32854ce3911ad);
+            
+
+            regular_polygon_marker_0699a7e981c148e4a9f95699ad66bc7c.bindPopup(popup_571bc44bbdec4a8f9f9b372203c9a4f4);
+
+            
+        
+    
+            var regular_polygon_marker_d9c456843d5f4b78bd07723514267fcf = new L.RegularPolygonMarker(
+                new L.LatLng(52.3899603,4.7824601),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_879056fa62774b0dbc8fc4e3aa86d39d = L.popup({maxWidth: '300'});
+
+            
+                var html_0c1732dcdbaa4d57ab175ac94c673c6b = $('<div id="html_0c1732dcdbaa4d57ab175ac94c673c6b" style="width: 100.0%; height: 100.0%;">Postcode: 1046 | Stroomverbruik: 5615698</div>')[0];
+                popup_879056fa62774b0dbc8fc4e3aa86d39d.setContent(html_0c1732dcdbaa4d57ab175ac94c673c6b);
+            
+
+            regular_polygon_marker_d9c456843d5f4b78bd07723514267fcf.bindPopup(popup_879056fa62774b0dbc8fc4e3aa86d39d);
+
+            
+        
+    
+            var regular_polygon_marker_3c22a03263da41c480a32e6261193df4 = new L.RegularPolygonMarker(
+                new L.LatLng(52.4099722,4.7494287),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_f5624946609340b88009441540f81284 = L.popup({maxWidth: '300'});
+
+            
+                var html_21c3743c53a542a380d717be6d190d80 = $('<div id="html_21c3743c53a542a380d717be6d190d80" style="width: 100.0%; height: 100.0%;">Postcode: 1047 | Stroomverbruik: 1565334</div>')[0];
+                popup_f5624946609340b88009441540f81284.setContent(html_21c3743c53a542a380d717be6d190d80);
+            
+
+            regular_polygon_marker_3c22a03263da41c480a32e6261193df4.bindPopup(popup_f5624946609340b88009441540f81284);
+
+            
+        
+    
+            var regular_polygon_marker_5ecf4a4dbdfd4f969cdfbc22420e3b67 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3797728,4.8686235),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_0e23cfa8536d4dd4b6a1bb03a9bbe209 = L.popup({maxWidth: '300'});
+
+            
+                var html_cf9229b333cc4f6cb0a3f2f667cadaab = $('<div id="html_cf9229b333cc4f6cb0a3f2f667cadaab" style="width: 100.0%; height: 100.0%;">Postcode: 1051 | Stroomverbruik: 21813616</div>')[0];
+                popup_0e23cfa8536d4dd4b6a1bb03a9bbe209.setContent(html_cf9229b333cc4f6cb0a3f2f667cadaab);
+            
+
+            regular_polygon_marker_5ecf4a4dbdfd4f969cdfbc22420e3b67.bindPopup(popup_0e23cfa8536d4dd4b6a1bb03a9bbe209);
+
+            
+        
+    
+            var regular_polygon_marker_8631d5b9a969474ea6d89669ff1938e4 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3768523,4.87475),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_0412ed846a75469a9985d7691f368467 = L.popup({maxWidth: '300'});
+
+            
+                var html_da7a5479ab9740a5aac58ea26455ef28 = $('<div id="html_da7a5479ab9740a5aac58ea26455ef28" style="width: 100.0%; height: 100.0%;">Postcode: 1052 | Stroomverbruik: 19916848</div>')[0];
+                popup_0412ed846a75469a9985d7691f368467.setContent(html_da7a5479ab9740a5aac58ea26455ef28);
+            
+
+            regular_polygon_marker_8631d5b9a969474ea6d89669ff1938e4.bindPopup(popup_0412ed846a75469a9985d7691f368467);
+
+            
+        
+    
+            var regular_polygon_marker_aec1208aec664e2fae9f141b8e74d4d0 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3663937,4.8695863),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_07f34163521e472daa22ac64e1ea38a4 = L.popup({maxWidth: '300'});
+
+            
+                var html_5c2c1afc4f424b72b5844fb538b0f0da = $('<div id="html_5c2c1afc4f424b72b5844fb538b0f0da" style="width: 100.0%; height: 100.0%;">Postcode: 1053 | Stroomverbruik: 30497629</div>')[0];
+                popup_07f34163521e472daa22ac64e1ea38a4.setContent(html_5c2c1afc4f424b72b5844fb538b0f0da);
+            
+
+            regular_polygon_marker_aec1208aec664e2fae9f141b8e74d4d0.bindPopup(popup_07f34163521e472daa22ac64e1ea38a4);
+
+            
+        
+    
+            var regular_polygon_marker_b605925156944235b094742ff36b32fa = new L.RegularPolygonMarker(
+                new L.LatLng(52.3612327,4.8653587),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_6cf896f3a7084e3c82718bac76a50f07 = L.popup({maxWidth: '300'});
+
+            
+                var html_4a72cb450d75496e86f4c104109dfcf3 = $('<div id="html_4a72cb450d75496e86f4c104109dfcf3" style="width: 100.0%; height: 100.0%;">Postcode: 1054 | Stroomverbruik: 35757722</div>')[0];
+                popup_6cf896f3a7084e3c82718bac76a50f07.setContent(html_4a72cb450d75496e86f4c104109dfcf3);
+            
+
+            regular_polygon_marker_b605925156944235b094742ff36b32fa.bindPopup(popup_6cf896f3a7084e3c82718bac76a50f07);
+
+            
+        
+    
+            var regular_polygon_marker_a5b71b2d838c45e38829519073598f5b = new L.RegularPolygonMarker(
+                new L.LatLng(52.3817073,4.8540225),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_5e06f72e6f464947b510d23eb7389d3b = L.popup({maxWidth: '300'});
+
+            
+                var html_2bc713436b234b64964603386cb1e2f4 = $('<div id="html_2bc713436b234b64964603386cb1e2f4" style="width: 100.0%; height: 100.0%;">Postcode: 1055 | Stroomverbruik: 26850023</div>')[0];
+                popup_5e06f72e6f464947b510d23eb7389d3b.setContent(html_2bc713436b234b64964603386cb1e2f4);
+            
+
+            regular_polygon_marker_a5b71b2d838c45e38829519073598f5b.bindPopup(popup_5e06f72e6f464947b510d23eb7389d3b);
+
+            
+        
+    
+            var regular_polygon_marker_5d02b9ba0b9b4ab4aab95bed12786446 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3723685,4.854042),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_953f674e9d0641a58ca6531dffffd1cf = L.popup({maxWidth: '300'});
+
+            
+                var html_7b6a5d8169fb4745b0f9c41e8b548e01 = $('<div id="html_7b6a5d8169fb4745b0f9c41e8b548e01" style="width: 100.0%; height: 100.0%;">Postcode: 1056 | Stroomverbruik: 24585893</div>')[0];
+                popup_953f674e9d0641a58ca6531dffffd1cf.setContent(html_7b6a5d8169fb4745b0f9c41e8b548e01);
+            
+
+            regular_polygon_marker_5d02b9ba0b9b4ab4aab95bed12786446.bindPopup(popup_953f674e9d0641a58ca6531dffffd1cf);
+
+            
+        
+    
+            var regular_polygon_marker_e3aee1c06e614d80a20aa296ba260b65 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3670713,4.8531117),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_278a9c8647ee4e09b17b5d6a4385b91b = L.popup({maxWidth: '300'});
+
+            
+                var html_d0c621a5708543d9900b5128ad7950b3 = $('<div id="html_d0c621a5708543d9900b5128ad7950b3" style="width: 100.0%; height: 100.0%;">Postcode: 1057 | Stroomverbruik: 23756186</div>')[0];
+                popup_278a9c8647ee4e09b17b5d6a4385b91b.setContent(html_d0c621a5708543d9900b5128ad7950b3);
+            
+
+            regular_polygon_marker_e3aee1c06e614d80a20aa296ba260b65.bindPopup(popup_278a9c8647ee4e09b17b5d6a4385b91b);
+
+            
+        
+    
+            var regular_polygon_marker_4bc672ca87504ec6bcf5c50c74ccc4f6 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3605178,4.8503025),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_ea53d579a5a648379545b9218a5d9217 = L.popup({maxWidth: '300'});
+
+            
+                var html_23a96d92c1534d36b13c2a01860e14d9 = $('<div id="html_23a96d92c1534d36b13c2a01860e14d9" style="width: 100.0%; height: 100.0%;">Postcode: 1058 | Stroomverbruik: 22514216</div>')[0];
+                popup_ea53d579a5a648379545b9218a5d9217.setContent(html_23a96d92c1534d36b13c2a01860e14d9);
+            
+
+            regular_polygon_marker_4bc672ca87504ec6bcf5c50c74ccc4f6.bindPopup(popup_ea53d579a5a648379545b9218a5d9217);
+
+            
+        
+    
+            var regular_polygon_marker_b54247b1e27d4518a59ebde31678f6cd = new L.RegularPolygonMarker(
+                new L.LatLng(52.3460212,4.8461017),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_2d595fe1525f4e9a9dd4bbcacec20618 = L.popup({maxWidth: '300'});
+
+            
+                var html_a396328890594ed58ccecc4ec717f39b = $('<div id="html_a396328890594ed58ccecc4ec717f39b" style="width: 100.0%; height: 100.0%;">Postcode: 1059 | Stroomverbruik: 10548292</div>')[0];
+                popup_2d595fe1525f4e9a9dd4bbcacec20618.setContent(html_a396328890594ed58ccecc4ec717f39b);
+            
+
+            regular_polygon_marker_b54247b1e27d4518a59ebde31678f6cd.bindPopup(popup_2d595fe1525f4e9a9dd4bbcacec20618);
+
+            
+        
+    
+            var regular_polygon_marker_7048a2375dbe490e94534b1b1376ef9e = new L.RegularPolygonMarker(
+                new L.LatLng(52.3470443,4.7882876),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_e2607d8c678e49d7ad9fd107ed0de81f = L.popup({maxWidth: '300'});
+
+            
+                var html_71839d37c00e4d71a954e81a6f957a54 = $('<div id="html_71839d37c00e4d71a954e81a6f957a54" style="width: 100.0%; height: 100.0%;">Postcode: 1060 | Stroomverbruik: 14062029</div>')[0];
+                popup_e2607d8c678e49d7ad9fd107ed0de81f.setContent(html_71839d37c00e4d71a954e81a6f957a54);
+            
+
+            regular_polygon_marker_7048a2375dbe490e94534b1b1376ef9e.bindPopup(popup_e2607d8c678e49d7ad9fd107ed0de81f);
+
+            
+        
+    
+            var regular_polygon_marker_a6da0cf264b8425ea47ef148fb6e6a0b = new L.RegularPolygonMarker(
+                new L.LatLng(52.3730438,4.837568),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_e99936e514e04b2880e4b0466e151a88 = L.popup({maxWidth: '300'});
+
+            
+                var html_3c284b13aec34bdf808767574d35830a = $('<div id="html_3c284b13aec34bdf808767574d35830a" style="width: 100.0%; height: 100.0%;">Postcode: 1061 | Stroomverbruik: 17077879</div>')[0];
+                popup_e99936e514e04b2880e4b0466e151a88.setContent(html_3c284b13aec34bdf808767574d35830a);
+            
+
+            regular_polygon_marker_a6da0cf264b8425ea47ef148fb6e6a0b.bindPopup(popup_e99936e514e04b2880e4b0466e151a88);
+
+            
+        
+    
+            var regular_polygon_marker_c78b715fc314414794d629cbaf8129d3 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3517216,4.8371533),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_f8f064ce002241439732e5ad30ca3cee = L.popup({maxWidth: '300'});
+
+            
+                var html_e9486d4e67ce4197bce5fefb35673cb2 = $('<div id="html_e9486d4e67ce4197bce5fefb35673cb2" style="width: 100.0%; height: 100.0%;">Postcode: 1062 | Stroomverbruik: 13832033</div>')[0];
+                popup_f8f064ce002241439732e5ad30ca3cee.setContent(html_e9486d4e67ce4197bce5fefb35673cb2);
+            
+
+            regular_polygon_marker_c78b715fc314414794d629cbaf8129d3.bindPopup(popup_f8f064ce002241439732e5ad30ca3cee);
+
+            
+        
+    
+            var regular_polygon_marker_ee72176b482049f8b9054908105051df = new L.RegularPolygonMarker(
+                new L.LatLng(52.3815295,4.825779),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_55ea9e632c2a44b2b910d6768aeb644f = L.popup({maxWidth: '300'});
+
+            
+                var html_b32439b0c69f4a58ac5f6451c2b4f9e9 = $('<div id="html_b32439b0c69f4a58ac5f6451c2b4f9e9" style="width: 100.0%; height: 100.0%;">Postcode: 1063 | Stroomverbruik: 17616859</div>')[0];
+                popup_55ea9e632c2a44b2b910d6768aeb644f.setContent(html_b32439b0c69f4a58ac5f6451c2b4f9e9);
+            
+
+            regular_polygon_marker_ee72176b482049f8b9054908105051df.bindPopup(popup_55ea9e632c2a44b2b910d6768aeb644f);
+
+            
+        
+    
+            var regular_polygon_marker_095e3d7cd2f946bfa5d61ba8866f5e23 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3724594,4.8192201),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_cc2241b817e9476d8a9c713f80b53a51 = L.popup({maxWidth: '300'});
+
+            
+                var html_16de90841dcd460c8ac74b020ba95eae = $('<div id="html_16de90841dcd460c8ac74b020ba95eae" style="width: 100.0%; height: 100.0%;">Postcode: 1064 | Stroomverbruik: 19252733</div>')[0];
+                popup_cc2241b817e9476d8a9c713f80b53a51.setContent(html_16de90841dcd460c8ac74b020ba95eae);
+            
+
+            regular_polygon_marker_095e3d7cd2f946bfa5d61ba8866f5e23.bindPopup(popup_cc2241b817e9476d8a9c713f80b53a51);
+
+            
+        
+    
+            var regular_polygon_marker_342e4adf1dc7400181d476dd12baf14a = new L.RegularPolygonMarker(
+                new L.LatLng(52.3560303,4.8296176),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_01208a177a1a42659619aa38effe08e7 = L.popup({maxWidth: '300'});
+
+            
+                var html_ddb6be8fefbb4c65a7fbf3028a5a215b = $('<div id="html_ddb6be8fefbb4c65a7fbf3028a5a215b" style="width: 100.0%; height: 100.0%;">Postcode: 1065 | Stroomverbruik: 15559150</div>')[0];
+                popup_01208a177a1a42659619aa38effe08e7.setContent(html_ddb6be8fefbb4c65a7fbf3028a5a215b);
+            
+
+            regular_polygon_marker_342e4adf1dc7400181d476dd12baf14a.bindPopup(popup_01208a177a1a42659619aa38effe08e7);
+
+            
+        
+    
+            var regular_polygon_marker_ba9cdb8dd45e4eea890ca6291f96ad85 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3431932,4.817434),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_7a50db809d724f2e85bf490f4d379b3e = L.popup({maxWidth: '300'});
+
+            
+                var html_0508a78939e5411681fc321a1388690e = $('<div id="html_0508a78939e5411681fc321a1388690e" style="width: 100.0%; height: 100.0%;">Postcode: 1066 | Stroomverbruik: 26036507</div>')[0];
+                popup_7a50db809d724f2e85bf490f4d379b3e.setContent(html_0508a78939e5411681fc321a1388690e);
+            
+
+            regular_polygon_marker_ba9cdb8dd45e4eea890ca6291f96ad85.bindPopup(popup_7a50db809d724f2e85bf490f4d379b3e);
+
+            
+        
+    
+            var regular_polygon_marker_7894c03238e941adbb64ebacf2d8a050 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3765795,4.7834602),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_173533095c264e61b3dee41d00acc155 = L.popup({maxWidth: '300'});
+
+            
+                var html_02f4c7df99374494b7fd71c08c064251 = $('<div id="html_02f4c7df99374494b7fd71c08c064251" style="width: 100.0%; height: 100.0%;">Postcode: 1067 | Stroomverbruik: 24995078</div>')[0];
+                popup_173533095c264e61b3dee41d00acc155.setContent(html_02f4c7df99374494b7fd71c08c064251);
+            
+
+            regular_polygon_marker_7894c03238e941adbb64ebacf2d8a050.bindPopup(popup_173533095c264e61b3dee41d00acc155);
+
+            
+        
+    
+            var regular_polygon_marker_9bcaf10adb5b427ea626c2a9474d2dc5 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3624004,4.8042058),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_d9de4197e7c6475f940afa84e9dd3778 = L.popup({maxWidth: '300'});
+
+            
+                var html_a862016c41794c34a74c14772448026e = $('<div id="html_a862016c41794c34a74c14772448026e" style="width: 100.0%; height: 100.0%;">Postcode: 1068 | Stroomverbruik: 27932721</div>')[0];
+                popup_d9de4197e7c6475f940afa84e9dd3778.setContent(html_a862016c41794c34a74c14772448026e);
+            
+
+            regular_polygon_marker_9bcaf10adb5b427ea626c2a9474d2dc5.bindPopup(popup_d9de4197e7c6475f940afa84e9dd3778);
+
+            
+        
+    
+            var regular_polygon_marker_76ec96824f4f46f992ca3ce35d0a50b2 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3576375,4.7901227),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_3b953f31f3be47ac91cd2fad0fea6844 = L.popup({maxWidth: '300'});
+
+            
+                var html_eaeeced3954b4886a14312e64a401d87 = $('<div id="html_eaeeced3954b4886a14312e64a401d87" style="width: 100.0%; height: 100.0%;">Postcode: 1069 | Stroomverbruik: 36358958</div>')[0];
+                popup_3b953f31f3be47ac91cd2fad0fea6844.setContent(html_eaeeced3954b4886a14312e64a401d87);
+            
+
+            regular_polygon_marker_76ec96824f4f46f992ca3ce35d0a50b2.bindPopup(popup_3b953f31f3be47ac91cd2fad0fea6844);
+
+            
+        
+    
+            var regular_polygon_marker_7117ee812786401c89e59171420d0060 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3538654,4.8823114),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_3f9007a0a22f4cf39606211bbfa632f2 = L.popup({maxWidth: '300'});
+
+            
+                var html_66bbabe2bdc14ebd8a3ccfb23e6eb380 = $('<div id="html_66bbabe2bdc14ebd8a3ccfb23e6eb380" style="width: 100.0%; height: 100.0%;">Postcode: 1071 | Stroomverbruik: 41304250</div>')[0];
+                popup_3f9007a0a22f4cf39606211bbfa632f2.setContent(html_66bbabe2bdc14ebd8a3ccfb23e6eb380);
+            
+
+            regular_polygon_marker_7117ee812786401c89e59171420d0060.bindPopup(popup_3f9007a0a22f4cf39606211bbfa632f2);
+
+            
+        
+    
+            var regular_polygon_marker_9f221cac8d594224bbab64ebc5acb408 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3522009,4.8903141),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_5696eea27ad348f8b426077cd08b192a = L.popup({maxWidth: '300'});
+
+            
+                var html_7dace2aedf734cb79aab0391bd9d30f1 = $('<div id="html_7dace2aedf734cb79aab0391bd9d30f1" style="width: 100.0%; height: 100.0%;">Postcode: 1072 | Stroomverbruik: 30191501</div>')[0];
+                popup_5696eea27ad348f8b426077cd08b192a.setContent(html_7dace2aedf734cb79aab0391bd9d30f1);
+            
+
+            regular_polygon_marker_9f221cac8d594224bbab64ebc5acb408.bindPopup(popup_5696eea27ad348f8b426077cd08b192a);
+
+            
+        
+    
+            var regular_polygon_marker_ce7b331b978042e48b026191fabb4a6e = new L.RegularPolygonMarker(
+                new L.LatLng(52.351928,4.896904),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_e3571bb734454914a876b0e3c45fefd1 = L.popup({maxWidth: '300'});
+
+            
+                var html_c2b59abeb59946b89b93245d5d467f4c = $('<div id="html_c2b59abeb59946b89b93245d5d467f4c" style="width: 100.0%; height: 100.0%;">Postcode: 1073 | Stroomverbruik: 24015526</div>')[0];
+                popup_e3571bb734454914a876b0e3c45fefd1.setContent(html_c2b59abeb59946b89b93245d5d467f4c);
+            
+
+            regular_polygon_marker_ce7b331b978042e48b026191fabb4a6e.bindPopup(popup_e3571bb734454914a876b0e3c45fefd1);
+
+            
+        
+    
+            var regular_polygon_marker_7d735b9fee6140939fc50c4c9ff633b0 = new L.RegularPolygonMarker(
+                new L.LatLng(52.351518,4.90679),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_c9ae8bbc273143e9b836571e461d9863 = L.popup({maxWidth: '300'});
+
+            
+                var html_eb337fa06e7d424f974f2788486c30a3 = $('<div id="html_eb337fa06e7d424f974f2788486c30a3" style="width: 100.0%; height: 100.0%;">Postcode: 1074 | Stroomverbruik: 13926559</div>')[0];
+                popup_c9ae8bbc273143e9b836571e461d9863.setContent(html_eb337fa06e7d424f974f2788486c30a3);
+            
+
+            regular_polygon_marker_7d735b9fee6140939fc50c4c9ff633b0.bindPopup(popup_c9ae8bbc273143e9b836571e461d9863);
+
+            
+        
+    
+            var regular_polygon_marker_7b23196c711945458b6d2ef2fbccefb3 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3534239,4.860667),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_6028e2c164d74f679b23b712d05881ae = L.popup({maxWidth: '300'});
+
+            
+                var html_569bfbcee35f49aa9aa473b5356f6c57 = $('<div id="html_569bfbcee35f49aa9aa473b5356f6c57" style="width: 100.0%; height: 100.0%;">Postcode: 1075 | Stroomverbruik: 24806008</div>')[0];
+                popup_6028e2c164d74f679b23b712d05881ae.setContent(html_569bfbcee35f49aa9aa473b5356f6c57);
+            
+
+            regular_polygon_marker_7b23196c711945458b6d2ef2fbccefb3.bindPopup(popup_6028e2c164d74f679b23b712d05881ae);
+
+            
+        
+    
+            var regular_polygon_marker_e3ed31a2ff984f56a76d2116077bcc16 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3440889,4.860684),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_49931bf19af247f3b3f4196228f7385c = L.popup({maxWidth: '300'});
+
+            
+                var html_0b3e59c1007b480c9650b3a433326260 = $('<div id="html_0b3e59c1007b480c9650b3a433326260" style="width: 100.0%; height: 100.0%;">Postcode: 1076 | Stroomverbruik: 18874371</div>')[0];
+                popup_49931bf19af247f3b3f4196228f7385c.setContent(html_0b3e59c1007b480c9650b3a433326260);
+            
+
+            regular_polygon_marker_e3ed31a2ff984f56a76d2116077bcc16.bindPopup(popup_49931bf19af247f3b3f4196228f7385c);
+
+            
+        
+    
+            var regular_polygon_marker_9c737e91732e44b8bef83b7efddb1e70 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3435465,4.8738549),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_d6b6af88638245b98becc4b62cd0464b = L.popup({maxWidth: '300'});
+
+            
+                var html_064d6d9f0b2d486d9fa3eaa769fa64df = $('<div id="html_064d6d9f0b2d486d9fa3eaa769fa64df" style="width: 100.0%; height: 100.0%;">Postcode: 1077 | Stroomverbruik: 24780554</div>')[0];
+                popup_d6b6af88638245b98becc4b62cd0464b.setContent(html_064d6d9f0b2d486d9fa3eaa769fa64df);
+            
+
+            regular_polygon_marker_9c737e91732e44b8bef83b7efddb1e70.bindPopup(popup_d6b6af88638245b98becc4b62cd0464b);
+
+            
+        
+    
+            var regular_polygon_marker_595179e619454ff3abf454f6c726d142 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3441217,4.8922031),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_d51f977fd5404d2ba049a99ab44376af = L.popup({maxWidth: '300'});
+
+            
+                var html_62b75725cc304c0db7af405c3cbe0eaa = $('<div id="html_62b75725cc304c0db7af405c3cbe0eaa" style="width: 100.0%; height: 100.0%;">Postcode: 1078 | Stroomverbruik: 24993037</div>')[0];
+                popup_d51f977fd5404d2ba049a99ab44376af.setContent(html_62b75725cc304c0db7af405c3cbe0eaa);
+            
+
+            regular_polygon_marker_595179e619454ff3abf454f6c726d142.bindPopup(popup_d51f977fd5404d2ba049a99ab44376af);
+
+            
+        
+    
+            var regular_polygon_marker_02a3b18c6cc5421b82c8797791fa523f = new L.RegularPolygonMarker(
+                new L.LatLng(52.3421834,4.9067927),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_9e32c0d85c8e47c493f3ddad230782dd = L.popup({maxWidth: '300'});
+
+            
+                var html_6221555947ee4f23a0528bf925341eae = $('<div id="html_6221555947ee4f23a0528bf925341eae" style="width: 100.0%; height: 100.0%;">Postcode: 1079 | Stroomverbruik: 21499144</div>')[0];
+                popup_9e32c0d85c8e47c493f3ddad230782dd.setContent(html_6221555947ee4f23a0528bf925341eae);
+            
+
+            regular_polygon_marker_02a3b18c6cc5421b82c8797791fa523f.bindPopup(popup_9e32c0d85c8e47c493f3ddad230782dd);
+
+            
+        
+    
+            var regular_polygon_marker_f003ed3803c64b038f57ee31dea83c2b = new L.RegularPolygonMarker(
+                new L.LatLng(52.3337697,4.8522405),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_83d19e2ecdc143a1b43cd6d629f85ba4 = L.popup({maxWidth: '300'});
+
+            
+                var html_1cde0654fb9b4bf0b31cb6844b5dbdcd = $('<div id="html_1cde0654fb9b4bf0b31cb6844b5dbdcd" style="width: 100.0%; height: 100.0%;">Postcode: 1081 | Stroomverbruik: 12083187</div>')[0];
+                popup_83d19e2ecdc143a1b43cd6d629f85ba4.setContent(html_1cde0654fb9b4bf0b31cb6844b5dbdcd);
+            
+
+            regular_polygon_marker_f003ed3803c64b038f57ee31dea83c2b.bindPopup(popup_83d19e2ecdc143a1b43cd6d629f85ba4);
+
+            
+        
+    
+            var regular_polygon_marker_6913369c87b44756a2f95922ff93c837 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3314299,4.8766928),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_de496b8510464821a24eea28beff9915 = L.popup({maxWidth: '300'});
+
+            
+                var html_2d24e8e9274f4f11baa7038a14437379 = $('<div id="html_2d24e8e9274f4f11baa7038a14437379" style="width: 100.0%; height: 100.0%;">Postcode: 1082 | Stroomverbruik: 20557491</div>')[0];
+                popup_de496b8510464821a24eea28beff9915.setContent(html_2d24e8e9274f4f11baa7038a14437379);
+            
+
+            regular_polygon_marker_6913369c87b44756a2f95922ff93c837.bindPopup(popup_de496b8510464821a24eea28beff9915);
+
+            
+        
+    
+            var regular_polygon_marker_1b94c75ffee1460382e8be3cb8b9f1c1 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3268472,4.8908053),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_94409d27fce540e2a5c2384fd231e571 = L.popup({maxWidth: '300'});
+
+            
+                var html_1e2c5b15d1974106b83d2b64712e7115 = $('<div id="html_1e2c5b15d1974106b83d2b64712e7115" style="width: 100.0%; height: 100.0%;">Postcode: 1083 | Stroomverbruik: 11620223</div>')[0];
+                popup_94409d27fce540e2a5c2384fd231e571.setContent(html_1e2c5b15d1974106b83d2b64712e7115);
+            
+
+            regular_polygon_marker_1b94c75ffee1460382e8be3cb8b9f1c1.bindPopup(popup_94409d27fce540e2a5c2384fd231e571);
+
+            
+        
+    
+            var regular_polygon_marker_dfbdd42481a9459291947621477f7804 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3617208,4.981714),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_dc7c62a8ebde422bb5b73926da39821c = L.popup({maxWidth: '300'});
+
+            
+                var html_b5d4db0e16d140df9156a289ba3f5b40 = $('<div id="html_b5d4db0e16d140df9156a289ba3f5b40" style="width: 100.0%; height: 100.0%;">Postcode: 1086 | Stroomverbruik: 6800942</div>')[0];
+                popup_dc7c62a8ebde422bb5b73926da39821c.setContent(html_b5d4db0e16d140df9156a289ba3f5b40);
+            
+
+            regular_polygon_marker_dfbdd42481a9459291947621477f7804.bindPopup(popup_dc7c62a8ebde422bb5b73926da39821c);
+
+            
+        
+    
+            var regular_polygon_marker_c45fe59824c340939c3c27b64bda7c4e = new L.RegularPolygonMarker(
+                new L.LatLng(52.3555895,5.0005613),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_fc29af9cb5e242deb671d6a4da9af233 = L.popup({maxWidth: '300'});
+
+            
+                var html_54db254125ab4db0a52d2dadee5e7bf5 = $('<div id="html_54db254125ab4db0a52d2dadee5e7bf5" style="width: 100.0%; height: 100.0%;">Postcode: 1087 | Stroomverbruik: 30759707</div>')[0];
+                popup_fc29af9cb5e242deb671d6a4da9af233.setContent(html_54db254125ab4db0a52d2dadee5e7bf5);
+            
+
+            regular_polygon_marker_c45fe59824c340939c3c27b64bda7c4e.bindPopup(popup_fc29af9cb5e242deb671d6a4da9af233);
+
+            
+        
+    
+            var regular_polygon_marker_fae4f2783fd343f4a1f511494f971b6b = new L.RegularPolygonMarker(
+                new L.LatLng(52.3565396,4.9143228),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_b93b47e55b894fd79d01b3a10b4199b6 = L.popup({maxWidth: '300'});
+
+            
+                var html_63dfbd12850c4a96a072f5ba895d7917 = $('<div id="html_63dfbd12850c4a96a072f5ba895d7917" style="width: 100.0%; height: 100.0%;">Postcode: 1091 | Stroomverbruik: 25276738</div>')[0];
+                popup_b93b47e55b894fd79d01b3a10b4199b6.setContent(html_63dfbd12850c4a96a072f5ba895d7917);
+            
+
+            regular_polygon_marker_fae4f2783fd343f4a1f511494f971b6b.bindPopup(popup_b93b47e55b894fd79d01b3a10b4199b6);
+
+            
+        
+    
+            var regular_polygon_marker_e41e5838a0a346469e2b356552d0c37b = new L.RegularPolygonMarker(
+                new L.LatLng(52.358913,4.9213875),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_dc45061b41b1476abfe90c93b5f2213f = L.popup({maxWidth: '300'});
+
+            
+                var html_9b820a9a1dbe47a6a21f871688064c38 = $('<div id="html_9b820a9a1dbe47a6a21f871688064c38" style="width: 100.0%; height: 100.0%;">Postcode: 1092 | Stroomverbruik: 12681961</div>')[0];
+                popup_dc45061b41b1476abfe90c93b5f2213f.setContent(html_9b820a9a1dbe47a6a21f871688064c38);
+            
+
+            regular_polygon_marker_e41e5838a0a346469e2b356552d0c37b.bindPopup(popup_dc45061b41b1476abfe90c93b5f2213f);
+
+            
+        
+    
+            var regular_polygon_marker_3a8e8ad7bd2445e4877a14ae573aae7e = new L.RegularPolygonMarker(
+                new L.LatLng(52.3612861,4.9284541),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_e8f82c2002f34af4b6d6f366811cd9bb = L.popup({maxWidth: '300'});
+
+            
+                var html_564012b0882945619ea842fbc139f800 = $('<div id="html_564012b0882945619ea842fbc139f800" style="width: 100.0%; height: 100.0%;">Postcode: 1093 | Stroomverbruik: 18535649</div>')[0];
+                popup_e8f82c2002f34af4b6d6f366811cd9bb.setContent(html_564012b0882945619ea842fbc139f800);
+            
+
+            regular_polygon_marker_3a8e8ad7bd2445e4877a14ae573aae7e.bindPopup(popup_e8f82c2002f34af4b6d6f366811cd9bb);
+
+            
+        
+    
+            var regular_polygon_marker_8dbd7355f67d43c0a009bac95266ed20 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3636588,4.9355226),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_59e5462236ab48d5b42da8b9f3e505da = L.popup({maxWidth: '300'});
+
+            
+                var html_d9766a7eee1349649c06cb80f955634b = $('<div id="html_d9766a7eee1349649c06cb80f955634b" style="width: 100.0%; height: 100.0%;">Postcode: 1094 | Stroomverbruik: 17790422</div>')[0];
+                popup_59e5462236ab48d5b42da8b9f3e505da.setContent(html_d9766a7eee1349649c06cb80f955634b);
+            
+
+            regular_polygon_marker_8dbd7355f67d43c0a009bac95266ed20.bindPopup(popup_59e5462236ab48d5b42da8b9f3e505da);
+
+            
+        
+    
+            var regular_polygon_marker_fa1a4eebdcb440ad98407425e7721a91 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3614375,4.9567275),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_22e6845685554f1a858c4057e1a2abdd = L.popup({maxWidth: '300'});
+
+            
+                var html_674db8d4e831483a9757c02abfed07d3 = $('<div id="html_674db8d4e831483a9757c02abfed07d3" style="width: 100.0%; height: 100.0%;">Postcode: 1095 | Stroomverbruik: 16309282</div>')[0];
+                popup_22e6845685554f1a858c4057e1a2abdd.setContent(html_674db8d4e831483a9757c02abfed07d3);
+            
+
+            regular_polygon_marker_fa1a4eebdcb440ad98407425e7721a91.bindPopup(popup_22e6845685554f1a858c4057e1a2abdd);
+
+            
+        
+    
+            var regular_polygon_marker_6c0b0f81edaf437fb4813a9074d031ba = new L.RegularPolygonMarker(
+                new L.LatLng(52.3363412,4.9190299),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_86c4ef980d1940d1bd90b23caabfdb2c = L.popup({maxWidth: '300'});
+
+            
+                var html_2cf4842873c541c8be1489989881ca1b = $('<div id="html_2cf4842873c541c8be1489989881ca1b" style="width: 100.0%; height: 100.0%;">Postcode: 1096 | Stroomverbruik: 7564617</div>')[0];
+                popup_86c4ef980d1940d1bd90b23caabfdb2c.setContent(html_2cf4842873c541c8be1489989881ca1b);
+            
+
+            regular_polygon_marker_6c0b0f81edaf437fb4813a9074d031ba.bindPopup(popup_86c4ef980d1940d1bd90b23caabfdb2c);
+
+            
+        
+    
+            var regular_polygon_marker_92966e0c75674184aa1de8e219214115 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3463803,4.9340988),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_aab9ae156cf7496481adf0ebe4aa9f07 = L.popup({maxWidth: '300'});
+
+            
+                var html_91a4d3ccedb447469ab8c6b19f882cde = $('<div id="html_91a4d3ccedb447469ab8c6b19f882cde" style="width: 100.0%; height: 100.0%;">Postcode: 1097 | Stroomverbruik: 18928375</div>')[0];
+                popup_aab9ae156cf7496481adf0ebe4aa9f07.setContent(html_91a4d3ccedb447469ab8c6b19f882cde);
+            
+
+            regular_polygon_marker_92966e0c75674184aa1de8e219214115.bindPopup(popup_aab9ae156cf7496481adf0ebe4aa9f07);
+
+            
+        
+    
+            var regular_polygon_marker_7d5c9245bc104195bca8e0d528e65851 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3511236,4.9482332),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_bfae10322d724ba5a47c0483deb2abb6 = L.popup({maxWidth: '300'});
+
+            
+                var html_ce291a60cee545e586e18ecc6de18b23 = $('<div id="html_ce291a60cee545e586e18ecc6de18b23" style="width: 100.0%; height: 100.0%;">Postcode: 1098 | Stroomverbruik: 22164702</div>')[0];
+                popup_bfae10322d724ba5a47c0483deb2abb6.setContent(html_ce291a60cee545e586e18ecc6de18b23);
+            
+
+            regular_polygon_marker_7d5c9245bc104195bca8e0d528e65851.bindPopup(popup_bfae10322d724ba5a47c0483deb2abb6);
+
+            
+        
+    
+            var regular_polygon_marker_603941eb5d0d4317aa9a51967b18646f = new L.RegularPolygonMarker(
+                new L.LatLng(52.3295182,4.9227935),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_ca2f258d2c8e4702b9a91a719c2a2408 = L.popup({maxWidth: '300'});
+
+            
+                var html_da2363df683945f9869b003cdb0e7fee = $('<div id="html_da2363df683945f9869b003cdb0e7fee" style="width: 100.0%; height: 100.0%;">Postcode: 1099 | Stroomverbruik: 178350</div>')[0];
+                popup_ca2f258d2c8e4702b9a91a719c2a2408.setContent(html_da2363df683945f9869b003cdb0e7fee);
+            
+
+            regular_polygon_marker_603941eb5d0d4317aa9a51967b18646f.bindPopup(popup_ca2f258d2c8e4702b9a91a719c2a2408);
+
+            
+        
+    
+            var regular_polygon_marker_4cb0267ceb22453d9638947499b023d5 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3087775,4.9406597),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_854795827dad4ab9be28d413bfe4cee9 = L.popup({maxWidth: '300'});
+
+            
+                var html_b9e1282343ca49449c0de42463c7bbc0 = $('<div id="html_b9e1282343ca49449c0de42463c7bbc0" style="width: 100.0%; height: 100.0%;">Postcode: 1101 | Stroomverbruik: 4766136</div>')[0];
+                popup_854795827dad4ab9be28d413bfe4cee9.setContent(html_b9e1282343ca49449c0de42463c7bbc0);
+            
+
+            regular_polygon_marker_4cb0267ceb22453d9638947499b023d5.bindPopup(popup_854795827dad4ab9be28d413bfe4cee9);
+
+            
+        
+    
+            var regular_polygon_marker_46ac6666fbe94e4ca03a65803a628618 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3135175,4.9547795),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_105e94379b8f4db9972ad37079f7498c = L.popup({maxWidth: '300'});
+
+            
+                var html_6dc11d2fa64047fbb1ab6c652e69451d = $('<div id="html_6dc11d2fa64047fbb1ab6c652e69451d" style="width: 100.0%; height: 100.0%;">Postcode: 1102 | Stroomverbruik: 33331949</div>')[0];
+                popup_105e94379b8f4db9972ad37079f7498c.setContent(html_6dc11d2fa64047fbb1ab6c652e69451d);
+            
+
+            regular_polygon_marker_46ac6666fbe94e4ca03a65803a628618.bindPopup(popup_105e94379b8f4db9972ad37079f7498c);
+
+            
+        
+    
+            var regular_polygon_marker_f6660cfc4af44029bce89fdb1f942c3b = new L.RegularPolygonMarker(
+                new L.LatLng(52.3235484,4.9698582),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_2f117de648fb42208c1ef4ae7a6281c6 = L.popup({maxWidth: '300'});
+
+            
+                var html_9137dfc87731496aa40d279cb0c5ecd1 = $('<div id="html_9137dfc87731496aa40d279cb0c5ecd1" style="width: 100.0%; height: 100.0%;">Postcode: 1103 | Stroomverbruik: 20541573</div>')[0];
+                popup_2f117de648fb42208c1ef4ae7a6281c6.setContent(html_9137dfc87731496aa40d279cb0c5ecd1);
+            
+
+            regular_polygon_marker_f6660cfc4af44029bce89fdb1f942c3b.bindPopup(popup_2f117de648fb42208c1ef4ae7a6281c6);
+
+            
+        
+    
+            var regular_polygon_marker_3144dae9885d48cf8781b37aa69247a0 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3164474,4.9802023),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_11c98be67a6548928028fcfd064a8034 = L.popup({maxWidth: '300'});
+
+            
+                var html_4a94a86a14554c3aa90b0cd7d0c4c736 = $('<div id="html_4a94a86a14554c3aa90b0cd7d0c4c736" style="width: 100.0%; height: 100.0%;">Postcode: 1104 | Stroomverbruik: 18154211</div>')[0];
+                popup_11c98be67a6548928028fcfd064a8034.setContent(html_4a94a86a14554c3aa90b0cd7d0c4c736);
+            
+
+            regular_polygon_marker_3144dae9885d48cf8781b37aa69247a0.bindPopup(popup_11c98be67a6548928028fcfd064a8034);
+
+            
+        
+    
+            var regular_polygon_marker_8d902a883e144da2a6237d1f862ed9e3 = new L.RegularPolygonMarker(
+                new L.LatLng(52.2920769,4.9575717),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_4792c6e65ffd4387ab3c9e54991952b6 = L.popup({maxWidth: '300'});
+
+            
+                var html_2130b4d096574687a41d25830aba4a83 = $('<div id="html_2130b4d096574687a41d25830aba4a83" style="width: 100.0%; height: 100.0%;">Postcode: 1105 | Stroomverbruik: 1104067</div>')[0];
+                popup_4792c6e65ffd4387ab3c9e54991952b6.setContent(html_2130b4d096574687a41d25830aba4a83);
+            
+
+            regular_polygon_marker_8d902a883e144da2a6237d1f862ed9e3.bindPopup(popup_4792c6e65ffd4387ab3c9e54991952b6);
+
+            
+        
+    
+            var regular_polygon_marker_296f8c97cb174cb78956d9cf8ec434a8 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3007124,4.9740506),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_43a3d3d8e96c45fcb02ac4f32a7ba4e4 = L.popup({maxWidth: '300'});
+
+            
+                var html_28cb5e8806aa4e53ba1ce79d64899adc = $('<div id="html_28cb5e8806aa4e53ba1ce79d64899adc" style="width: 100.0%; height: 100.0%;">Postcode: 1106 | Stroomverbruik: 24853844</div>')[0];
+                popup_43a3d3d8e96c45fcb02ac4f32a7ba4e4.setContent(html_28cb5e8806aa4e53ba1ce79d64899adc);
+            
+
+            regular_polygon_marker_296f8c97cb174cb78956d9cf8ec434a8.bindPopup(popup_43a3d3d8e96c45fcb02ac4f32a7ba4e4);
+
+            
+        
+    
+            var regular_polygon_marker_0ab16bbc17e14f098c7f575e4849afbc = new L.RegularPolygonMarker(
+                new L.LatLng(52.2912462,4.9773243),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_c049e55ac6a244fe93de07b1767658b0 = L.popup({maxWidth: '300'});
+
+            
+                var html_5dbdf1e5044f4aa9b70192531ab9e806 = $('<div id="html_5dbdf1e5044f4aa9b70192531ab9e806" style="width: 100.0%; height: 100.0%;">Postcode: 1107 | Stroomverbruik: 15671233</div>')[0];
+                popup_c049e55ac6a244fe93de07b1767658b0.setContent(html_5dbdf1e5044f4aa9b70192531ab9e806);
+            
+
+            regular_polygon_marker_0ab16bbc17e14f098c7f575e4849afbc.bindPopup(popup_c049e55ac6a244fe93de07b1767658b0);
+
+            
+        
+    
+            var regular_polygon_marker_4554cd9a10704ed2800b3443fd9ece79 = new L.RegularPolygonMarker(
+                new L.LatLng(52.3065615,4.9933607),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#2b8cbe',
+                    fillOpacity: 1,
+                    numberOfSides: 20,
+                    rotation: 0,
+                    radius: 6
+                    }
+                )
+                .addTo(marker_cluster_bb7b528986ca4637a4aa2c9d6c50c460);
+            
+    
+            var popup_b9357b7dd2f34fbeacc8c177400737ff = L.popup({maxWidth: '300'});
+
+            
+                var html_2b713d2ba80c4a8cb936a507f829a672 = $('<div id="html_2b713d2ba80c4a8cb936a507f829a672" style="width: 100.0%; height: 100.0%;">Postcode: 1108 | Stroomverbruik: 4568504</div>')[0];
+                popup_b9357b7dd2f34fbeacc8c177400737ff.setContent(html_2b713d2ba80c4a8cb936a507f829a672);
+            
+
+            regular_polygon_marker_4554cd9a10704ed2800b3443fd9ece79.bindPopup(popup_b9357b7dd2f34fbeacc8c177400737ff);
+
+            
+        
+</script>
